@@ -1,0 +1,12 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration-color: red;
+}
+#cardsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
