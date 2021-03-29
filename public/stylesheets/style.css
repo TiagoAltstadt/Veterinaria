@@ -1,9 +1,15 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+#iframeYoutube{
+  width: 100%;
+  height: 20rem;
+}
 
-a {
-  text-decoration-color: red;
+@media all and (max-width: 336px){
+  #headerBrandText{
+    font-size: large;
+  }
 }
 #cardsContainer{
   display: flex;
