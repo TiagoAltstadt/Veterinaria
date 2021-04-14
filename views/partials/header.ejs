@@ -1,7 +1,28 @@
+<style>
+    .logo {
+        position: relative;
+        animation-name: brandAnimation;
+        animation-duration: 1s;
+    }
+
+    @keyframes brandAnimation {
+        0% {
+            left: -100px;
+            transform: rotate(-180deg);
+
+        }
+
+        100% {
+            left: 0px;
+            transform: rotate(0deg);
+        }
+    }
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
-            <img src='/images/logo.jpg' alt="Logo" width="70" height="70" class="d-inline-block align-text-center">
+            <img src='/images/logo.jpg' alt="Logo" width="70" height="70" class="d-inline-block align-text-center logo">
             <span id="headerBrandText">Veterinaria Estrada</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

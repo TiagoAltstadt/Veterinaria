@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .card {
+        position: relative;
+        animation-name: cardAnimation;
+        animation-duration: 0.5s;
+    }
 
+    @keyframes cardAnimation {
+        0% {
+            opacity: 0;
+            bottom: -100vw;
+        }
+
+        100% {
+            opacity: 1;
+            bottom: 0vw;
+        }
+
+    }
+</style>
 <%- include('./partials/head.ejs') %>
     <%- include('./partials/header.ejs') %>
 

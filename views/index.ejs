@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+  .thing {
+    position: relative;
+    animation-name: YTFade;
+    animation-duration: 2.5s;
+  }
+
+  @keyframes YTFade {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
 
 <%- include('./partials/head.ejs') %>
   <%- include('./partials/header.ejs') %>
@@ -10,14 +27,14 @@
 
         <br>
         <div class="row justify-content-center">
-          <div class="col-10 col-lg-6">
+          <div class="col-10 col-lg-6 thing">
             <%- include('./partials/carousel.ejs') %>
           </div>
         </div>
 
         <br>
         <div class="row justify-content-center">
-          <div class="col-10 col-lg-6">
+          <div class="col-10 col-lg-6 thing">
             <iframe id="iframeYoutube" src="https://www.youtube.com/embed/yCouD90SvB0" title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<%- include('./partials/head.ejs') %>
-  <%- include('./partials/header.ejs') %>
+<html>
 
-    <body>
-      <div class="card bg-dark text-white" style="width: 80vw; height: fit-content; margin: 0 auto;">
-        <img src="/images/clinicaBanner.jpg" class="card-img" alt="..." style="filter: blur(2px);">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Veterinaria Estrada</h5>
-          <p class="card-text">Bienvenidos a Veterinaria Nueva Estrada! No duden en seguirnos en redes ( Instagram,
-            Whatsapp) o podes ahora tambien sacar turno online desde <a
-              href="https://veterinariaestrada4852.setmore.com/">acá</a></p>
-          <p class="card-text">-Veterinaria Nueva Estrada</p>
-        </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .bg-image {
+      /* The image used */
+      background-image: url("../images/clinicaBanner.jpg");
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <%- include('./partials/head.ejs') %>
+    <%- include('./partials/header.ejs') %>
+
+      <div class="bg-image"></div>
+
+      <div class="bg-text">
+        <h5 class="card-title" style="width:fit-content; margin: 3px auto;">Veterinaria Estrada</h5>
+
+        <p class="card-text" style="width:fit-content; margin: 3px auto;">Bienvenidos a Veterinaria Nueva Estrada! No
+          duden en seguirnos en redes ( Instagram,
+          Whatsapp) o podes ahora tambien sacar turno online desde
+          <a href="https://veterinariaestrada4852.setmore.com/">acá</a>
+        </p>
+
+        <p class="card-text" style="width:fit-content; margin: 3px auto;">-Veterinaria Nueva Estrada</p>
       </div>
-    </body>
+
+</body>
 
 </html>
